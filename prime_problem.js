@@ -3,7 +3,8 @@ function isNumberPrime(number){
 
     for (let i = 2; i * i <= number; i++) {
       if (number % i == 0) {
-        isprime = true;
+        isprime = false;
+        break;
       }
     }
     if ( isprime == true) {
@@ -14,4 +15,4 @@ function isNumberPrime(number){
     }
 }
 
-isNumberPrime(23);
+isNumberPrime(24);

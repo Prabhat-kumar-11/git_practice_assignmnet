@@ -4,7 +4,7 @@ function checkPalindrome(word){
     isPalindrome = true;
 
     while(low < hi){
-        if(word[low] == word[hi]){
+        if(word[low] != word[hi]){
             isPalindrome = false;
             break;
         }
